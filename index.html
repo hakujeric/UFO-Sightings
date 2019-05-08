@@ -34,6 +34,12 @@
               <div class="panel-body">
                 <form>
                   <div class="form-group">
+                      <select id="selDataset" onchange="getData(this.value)">
+                          <option value="dataset1">Date</option>
+                          <option value="dataset2">UK</option>
+                          <option value="dataset3">Canada</option>
+                      </select>
+
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
@@ -42,6 +48,8 @@
                     </ul>
                   </div>
                   <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+
+                  <button id="advSearch-btn" type="submit" class="btn btn-default">Advance Search</button>
                 </form>
               </div>
             </div>
